@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sex og Samfund spil - Gruppe 10</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="screen">
+        <div id="start">
+            <div id="startknap" class="pulse"></div>
+            <div id="logo"></div>
+        </div>
+        <div id="gameinfo" class="hide">
+            <div class="tekstinfo">
+
+                <p>
+                    Ved du, hvad du må dele?<br>
+                </p>
+
+
+
+
+
+                <div class="good_info">
+                    <!--                    <div id="goodselector_info"></div>-->
+                    <p>Tryk <img src="assets/good.png"> hvis du vil dele billedet.</p>
+                </div>
+
+
+                <div class="bad_info">
+                    <p>Tryk <img src="assets/bad.png"> hvis du IKKE vil dele billedet.</p>
+                    <!--                    <div id="badselector_info"></div>-->
+
+                </div>
+                <p></p>
+
+
+                <p>Du har 45 sekunder til at lave 10 rigtige beslutninger.</p>
+
+                <div id="play" class="pulse"></div>
+                <!--
+                <p>Held og lykke!</p>
+                <p>Tryk hvor som helst for at starte spillet</p>
+-->
+            </div>
+        </div>
+        <div id="game" class="hide">
+            <div id="game_foreground"></div>
+            <div id="game_background"></div>
+            <div id="game_elements">
+
+                <div id="figurer">
+                    <div id="figurerneutral"></div>
+                    <div id="figurersad" class="hide"></div>
+                    <div id="figurerhappy" class="hide"></div>
+                </div>
+                <div id="billeder">
+                    <div id="billede1" class="good hide"></div>
+                    <div id="billede2" class="good hide"></div>
+                    <div id="billede3" class="good hide"></div>
+                    <div id="billede4" class="good hide"></div>
+                    <div id="billede5" class="good hide"></div>
+                    <div id="billede6" class="bad hide"></div>
+                    <div id="billede7" class="bad hide"></div>
+                    <div id="billede8" class="bad hide"></div>
+                    <div id="billede9" class="bad hide"></div>
+                    <div id="billede10" class="bad hide"></div>
+                    <div id="billede11" class="good hide"></div>
+                    <div id="billede12" class="good hide"></div>
+                    <div id="billede13" class="good hide"></div>
+                    <div id="billede14" class="good hide"></div>
+                    <div id="billede15" class="good hide"></div>
+                    <div id="billede16" class="bad hide"></div>
+                    <div id="billede17" class="bad hide"></div>
+                    <div id="billede18" class="bad hide"></div>
+                    <div id="billede19" class="bad hide"></div>
+                    <div id="billede20" class="bad hide"></div>
+                </div>
+                <div id="smileys">
+                    <div id="happysmiley" class="hide"></div>
+                    <div id="sadsmiley" class="hide"></div>
+
+                </div>
+            </div>
+
+            <div id="game_ui">
+                <div id="score_board" class="farveskift">SCORE
+                    <div id="score_points">0</div>
+                </div>
+                <div id="time_board">
+                    <div id="time_board_fill" class="timer"></div>
+                </div>
+                <div id="liv_board">
+                    <div id="hjerte1" class="hjerter"></div>
+                    <div id="hjerte2" class="hjerter"></div>
+                    <div id="hjerte3" class="hjerter"></div>
+                </div>
+
+                <div id="good_knap"></div>
+
+
+                <div id="bad_knap"></div>
+
+            </div>
+        </div>
+
+        <div id="gameover" class="hide">
+            <div class="tekst">
+                <p>Øv, det var du ik helt god til.</p>
+
+                <p> Det er ulovligt at dele eller offentliggøre billeder af andre, hvis de ikke har givet lov.
+                </p>
+                <p>Klik videre for at høre mere om billeddeling, eller spille igen.</p>
+            </div>
+            <div id="spiligenknap_go"></div>
+            <div id="mainmenuknap_go"></div>
+            <div class="more_arrow"></div>
+            <a href="http://privatsnak.dk" target="_blank">
+                <div id="mereinfo"></div>
+            </a>
+
+        </div>
+        <div id="levelcomplete" class="hide">
+            <div class="tekst">
+                <p> Fedt! Du har helt styr på reglerne.</p>
+
+                <p> Det er ulovligt at dele eller offentliggøre billeder af andre, hvis de ikke har givet lov.
+                </p>
+                <p>Klik videre for at høre mere om billeddeling, eller spille igen.</p>
+            </div>
+            <div id="spiligenknap_lc"></div>
+            <div id="mainmenuknap_lc"></div>
+            <div class="more_arrow"></div>
+            <a href="http://privatsnak.dk" target="_blank">
+                <div id="mereinfo2"></div>
+            </a>
+
+
+        </div>
+    </div>
+
+
+    <audio src="sound/right2.mp3" id="correct"></audio>
+    <audio src="sound/wrong2.mp3" id="wrong"></audio>
+
+    <script src="script.js"></script>
+</body></html>

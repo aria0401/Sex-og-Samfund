@@ -1,0 +1,646 @@
+/*--------GENERELLE REGLER--------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.grey {
+    filter: grayscale(1);
+}
+
+.hide {
+    display: none;
+}
+
+
+/*--------STARTSKÆRM--------*/
+#start {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/startscreen.png);
+    background-size: cover;
+    position: absolute;
+}
+
+#startknap {
+    background-image: url(svg/startknap.svg);
+    width: 18vw;
+    height: 9vw;
+    background-size: cover;
+    position: absolute;
+    left: 72vw;
+    top: 5.2vw;
+}
+
+#play {
+    background-image: url(svg/startknap.svg);
+    width: 12vw;
+    height: 6vw;
+    background-size: cover;
+    position: absolute;
+    left: 32vw;
+    top: 22.2vw;
+}
+
+/*
+#start p {
+    font-family: 'Press Start 2P', cursive;
+    color: #F2798F;
+    font-size: 4.5vw;
+    position: absolute;
+    top: 3vw;
+    left: 10vw;
+}
+*/
+
+#logo {
+    background-image: url(svg/LOGO_gul.svg);
+    background-size: cover;
+    height: 8.68421052631579vw;
+    width: 60vw;
+    position: absolute;
+    top: 5vw;
+    left: 6vw;
+}
+
+
+/*---------- INFO SKÆRM ------------------*/
+
+#gameinfo {
+    height: 100%;
+    width: 100%;
+    background-image: url(mere/popup.svg);
+    background-size: cover;
+
+}
+
+#gameinfo p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5vw;
+    color: black;
+    margin-bottom: 3vw;
+}
+
+.tekstinfo {
+    width: 70vw;
+    top: 14vw;
+    left: 23vw;
+    position: absolute;
+
+}
+
+#goodselector_info {
+    background-image: url(svg/good_knap.svg);
+    background-size: cover;
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
+    left: -7vw;
+    top: 3.5vw;
+}
+
+#badselector_info {
+    background-image: url(svg/bad_knap.svg);
+    background-size: cover;
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
+    left: -7vw;
+    top: 8.5vw;
+}
+
+.bad_info img,
+.good_info img {
+    width: 5%;
+
+}
+
+/*--------GAME/BACKGROUND/FOREGROUND--------*/
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    background-image: url(assets/baggrund.png);
+    z-index: -1;
+}
+
+#game_foreground {
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    background-image: url(assets/forgrund.svg);
+    height: 45vw;
+    width: 45vw;
+    bottom: 0vw;
+    left: 10vw;
+    z-index: 2;
+}
+
+
+/*--------GAME ELEMENTS--------*/
+#game_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#figurerneutral {
+    background-image: url(assets/character_neutral.svg);
+    background-size: cover;
+    height: 40vw;
+    width: 40vw;
+    bottom: 2vw;
+    right: 2vw;
+    position: absolute;
+}
+
+#figurerhappy {
+    background-image: url(assets/character_happy.svg);
+    background-size: cover;
+    height: 40vw;
+    width: 40vw;
+    bottom: 2vw;
+    right: 0vw;
+    position: absolute;
+}
+
+
+#figurersad {
+    background-image: url(assets/character_sad.svg);
+    background-size: cover;
+    height: 40vw;
+    width: 40vw;
+    bottom: 2.5vw;
+    right: 0.5vw;
+    position: absolute;
+}
+
+#happysmiley {
+    background-image: url(assets/good_smiley.svg);
+    background-size: cover;
+    width: 24vw;
+    height: 41.37931034482759vw;
+    position: absolute;
+    top: 15vw;
+    left: 22vw;
+}
+
+#sadsmiley {
+    background-image: url(assets/bad_smiley.svg);
+    background-size: cover;
+    width: 24vw;
+    height: 41.37931034482759vw;
+    position: absolute;
+    top: 15vw;
+    left: 22vw;
+}
+
+/*-------------- BILLEDER ------------*/
+
+#billeder {
+    position: absolute;
+    top: 15vw;
+    left: 22vw;
+}
+
+#billede1 {
+    background-image: url(assets/good_1_1.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede2 {
+    background-image: url(assets/good_2.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede3 {
+    background-image: url(assets/good_3.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede4 {
+    background-image: url(assets/good_4.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede5 {
+    background-image: url(assets/good_5.svg);
+    width: 25vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede6 {
+    background-image: url(assets/bad_1.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede7 {
+    background-image: url(assets/bad_2.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede8 {
+    background-image: url(assets/bad_3.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede9 {
+    background-image: url(assets/bad_4.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede10 {
+    background-image: url(assets/bad_5.svg);
+    width: 24vw;
+    height: 38.018957345971565vw;
+    background-size: cover;
+}
+
+#billede11 {
+    background-image: url(assets/good_6.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede12 {
+    background-image: url(assets/good_7.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede13 {
+    background-image: url(assets/good_8.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede14 {
+    background-image: url(assets/good_9.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede15 {
+    background-image: url(assets/good_10.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede16 {
+    background-image: url(assets/bad_6.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede17 {
+    background-image: url(assets/bad_7.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede18 {
+    background-image: url(assets/bad_8.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede19 {
+    background-image: url(assets/bad_9.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+#billede20 {
+    background-image: url(assets/bad_10.svg);
+    width: 24vw;
+    height: 41.37931034482759vw;
+    background-size: cover;
+}
+
+
+
+
+/*--------- GAME UI ----------------*/
+
+#game_ui {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#liv_board {
+    display: flex;
+    position: absolute;
+    top: 2vw;
+    left: 75.5vw;
+}
+
+.hjerter {
+    background-image: url(svg/hjerte_ny.svg);
+    background-size: cover;
+    width: 6.5vw;
+    height: 5.2vw;
+    margin-left: 5px;
+
+}
+
+#good_knap {
+    background-image: url(svg/good_knap.svg);
+    background-size: cover;
+    height: 10vw;
+    width: 10vw;
+    top: 25vw;
+    left: 50vw;
+    position: absolute;
+}
+
+#bad_knap {
+    background-image: url(svg/bad_knap.svg);
+    background-size: cover;
+    height: 10vw;
+    width: 10vw;
+    top: 25vw;
+    left: 8vw;
+    position: absolute;
+}
+
+#time_board {
+    background-image: url(svg/timer_tom.svg);
+    width: 25vw;
+    height: 4.3478260869565215vw;
+    background-size: cover;
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+
+}
+
+#time_board_fill {
+    width: 0vw;
+    background-color: #F2798F;
+    height: 3vw;
+    position: absolute;
+    top: 0.8vw;
+    left: 0.5vw;
+    z-index: -1;
+}
+
+#score_points {
+    font-family: 'Press Start 2P', cursive;
+    color: #592E56;
+    font-size: 3.5vw;
+    position: absolute;
+    top: 0vw;
+    left: 22vw;
+}
+
+#score_board {
+    font-family: 'Press Start 2P', cursive;
+    color: #592E56;
+    font-size: 3.5vw;
+    position: absolute;
+    top: 2.7vw;
+    left: 40vw;
+}
+
+
+
+/*--------LEVEL COMPLETE--------*/
+#levelcomplete {
+    width: 100%;
+    height: 100%;
+    background-image: url(mere/level_complete.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+#spiligenknap_lc {
+    background-image: url(svg/spiligen_knap.svg);
+    width: 20vw;
+    height: 6.875vw;
+    background-size: cover;
+    position: absolute;
+    top: 33vw;
+    left: 29vw;
+}
+
+#mainmenuknap_lc {
+    background-image: url(svg/mainmenu_knap.svg);
+    width: 20vw;
+    height: 6.875vw;
+    background-size: cover;
+    position: absolute;
+    top: 33vw;
+    left: 52vw;
+}
+
+/*--------GAME OVER--------*/
+#gameover {
+    width: 100%;
+    height: 100%;
+    background-image: url(mere/game_over.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+#spiligenknap_go {
+    background-image: url(svg/spiligen_knap.svg);
+    width: 20vw;
+    height: 6.875vw;
+    background-size: cover;
+    position: absolute;
+    top: 33vw;
+    left: 27vw;
+    margin-left: 2vw;
+}
+
+#mainmenuknap_go {
+    background-image: url(svg/mainmenu_knap.svg);
+    width: 20vw;
+    height: 6.875vw;
+    background-size: cover;
+    position: absolute;
+    top: 33vw;
+    left: 52vw;
+}
+
+#gameover p,
+#levelcomplete p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.tekst {
+    width: 70vw;
+    top: 13vw;
+    left: 16vw;
+    position: absolute;
+}
+
+.tekst p {
+    line-height: 2.5vw;
+}
+
+#mereinfo {
+    height: 13vw;
+    width: 21vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 2vw;
+}
+
+#mereinfo2 {
+    height: 13vw;
+    width: 21vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 2vw;
+}
+
+.more_arrow {
+    background-image: url(svg/arrow_pixel.svg);
+    background-size: cover;
+    height: 4.17vw;
+    position: absolute;
+    width: 5vw;
+    right: 26vw;
+    bottom: 10vw;
+}
+
+/*--------ANIMATIONER--------*/
+
+.tryk {
+    animation-name: tryk_kf;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes tryk_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.timer {
+    animation-name: timer_kf;
+    animation-iteration-count: 1;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes timer_kf {
+    from {
+        width: 24vw;
+    }
+
+    to {
+        width: 0vw;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.farveskift {
+    animation-name: farveskift_kf;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+}
+
+@keyframes farveskift_kf {
+    0% {
+        color: #592E56;
+    }
+
+
+    50% {
+        color: #F2798F;
+    }
+
+    100% {
+        color: #592E56;
+    }
+}
